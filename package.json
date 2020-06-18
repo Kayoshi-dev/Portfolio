@@ -11,9 +11,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "@nuxtjs/bulma": "^1.2.1",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0",
+    "nuxt-i18n": "^6.12.2"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0"
