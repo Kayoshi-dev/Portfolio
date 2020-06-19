@@ -1,3 +1,14 @@
 {
-	"hello": "こんにちわ"
+	"home": {
+
+	},
+	"about": {
+		"title": "私について"
+	},
+	"blog": {
+		"title": "ブログ"
+	},
+	"project": {
+		"title": "私のプロジェクト"
+	}
 }

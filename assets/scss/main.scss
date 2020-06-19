@@ -1,0 +1,41 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap');
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+}
+::-webkit-scrollbar-thumb {
+	background: #9b59b6;
+	border: 0 none #ffffff;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #8d4aa9;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #7e4293;
+}
+::-webkit-scrollbar-track {
+	background: #ffffff;
+	border: 0 none #ffffff;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+	background: #b3b3b3;
+}
+::-webkit-scrollbar-track:active {
+	background: #b3b3b3;
+}
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+body {
+	color: $text !important;
+	font-family: 'Nunito', 'Noto Sans JP', sans-serif;
+}

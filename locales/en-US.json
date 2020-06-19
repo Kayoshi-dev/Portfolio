@@ -1,3 +1,14 @@
 {
-	"hello": "Hi"
+	"home": {
+
+	},
+	"about": {
+		"title": "About me"
+	},
+	"blog": {
+		"title": "Blog"
+	},
+	"project": {
+		"title": "My project"
+	}
 }

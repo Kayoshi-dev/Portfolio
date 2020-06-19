@@ -1,3 +1,14 @@
 {
-	"hello": "Bonjour"
+	"home": {
+
+	},
+	"about": {
+		"title": "A propos"
+	},
+	"blog": {
+		"title": "Blog"
+	},
+	"project": {
+		"title": "Mes projets"
+	}
 }
