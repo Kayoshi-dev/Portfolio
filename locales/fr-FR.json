@@ -1,6 +1,7 @@
 {
 	"home": {
-
+		"welcome": "Bienvenue",
+		"title": ", je suis Kayoshi \"Maxime\" "
 	},
 	"about": {
 		"title": "A propos"
@@ -10,5 +11,8 @@
 	},
 	"project": {
 		"title": "Mes projets"
+	},
+	"navbar": {
+		"pickLanguage": "Choisissez votre langue"
 	}
 }

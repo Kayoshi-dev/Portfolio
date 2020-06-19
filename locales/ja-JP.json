@@ -1,6 +1,7 @@
 {
 	"home": {
-
+		"welcome": "ようこそ",
+		"title": "私はマキシム「かよし」です"
 	},
 	"about": {
 		"title": "私について"
@@ -10,5 +11,8 @@
 	},
 	"project": {
 		"title": "私のプロジェクト"
+	},
+	"navbar": {
+		"pickLanguage": "言語を選んでください"
 	}
 }

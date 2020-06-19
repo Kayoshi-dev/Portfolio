@@ -1,6 +1,7 @@
 {
 	"home": {
-
+		"welcome": "Welcome",
+		"title": ", I'm Maxime alias \"Kayoshi \""
 	},
 	"about": {
 		"title": "About me"
@@ -10,5 +11,8 @@
 	},
 	"project": {
 		"title": "My project"
+	},
+	"navbar": {
+		"pickLanguage": "Choose your language"
 	}
 }
