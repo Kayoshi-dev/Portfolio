@@ -1,43 +1,35 @@
 <template>
 	<div class="container">
 		<div>
-			<logo />
 			<h1 class="title">
-				portfolio
+				<span class="highlighted-purple">{{$t('home.welcome')}}</span>{{$t('home.title')}}
 			</h1>
+
 			<h2 class="subtitle">
 				My super cool portfolio!
 			</h2>
-			<div class="links">
-				<a
-					href="https://nuxtjs.org/"
-					target="_blank"
-					class="button--green"
-				>
-					Documentation
-				</a>
-				<a
-					href="https://github.com/nuxt/nuxt.js"
-					target="_blank"
-					class="button--grey"
-				>
-					GitHub
-				</a>
-			</div>
 		</div>
 	</div>
 </template>
 
 <script lang="ts">
 	import Vue from 'vue'
-	import Logo from '~/components/Logo.vue'
 
 	export default Vue.extend({
-		components: {
-			Logo
-		}
+
 	})
 </script>
 
-<style>
+<style lang="scss">
+	.highlighted-purple::after {
+		position: absolute;
+		left: 15px;
+		content: "";
+		width: 128px;
+		height: 25px;
+		background-color: lighten(#9b59b6, 20%);
+		z-index: -3;
+		transform: translate(-15px);
+		top: 10px;
+	}
 </style>
