@@ -71,8 +71,6 @@
 	}
 
 	select {
-		.fr-option {
-			background: url("~@/assets/img/fr_flag.svg") left center repeat;
-		}
+
 	}
 </style>
