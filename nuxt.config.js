@@ -30,6 +30,8 @@ export default {
 	** Plugins to load before mounting the App
 	*/
 	plugins: [
+		'@assets/ts/customCursor.ts',
+		'@assets/ts/hoverHandler.ts'
 	],
 	/*
 	** Nuxt.js dev-modules

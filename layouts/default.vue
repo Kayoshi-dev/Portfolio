@@ -1,6 +1,8 @@
 <template>
 	<div>
 		<Navbar/>
+		<div id="cursor-inner" class="cursor cursor--small"></div>
+		<div id="cursor-outer" class="cursor cursor--outer"></div>
 		<nuxt />
 	</div>
 </template>
