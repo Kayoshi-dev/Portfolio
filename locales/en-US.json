@@ -1,3 +1,21 @@
 {
-	"hello": "Hi"
+	"home": {
+		"welcome": "Welcome",
+		"title": ", I'm Maxime alias \"Kayoshi \""
+	},
+	"about": {
+		"title": "About me"
+	},
+	"blog": {
+		"title": "Blog"
+	},
+	"project": {
+		"title": "My project"
+	},
+	"navbar": {
+		"pickLanguage": "Choose your language",
+		"fr": "French",
+		"en": "English",
+		"ja": "Japanese"
+	}
 }

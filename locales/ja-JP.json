@@ -1,3 +1,21 @@
 {
-	"hello": "こんにちわ"
+	"home": {
+		"welcome": "ようこそ",
+		"title": "私はマキシム「かよし」です"
+	},
+	"about": {
+		"title": "私について"
+	},
+	"blog": {
+		"title": "ブログ"
+	},
+	"project": {
+		"title": "私のプロジェクト"
+	},
+	"navbar": {
+		"pickLanguage": "言語を選んでください",
+		"fr": "フランス語",
+		"en": "英語",
+		"ja": "日本語"
+	}
 }
