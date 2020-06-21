@@ -13,6 +13,9 @@
 		"title": "Mes projets"
 	},
 	"navbar": {
-		"pickLanguage": "Choisissez votre langue"
+		"pickLanguage": "Choisissez votre langue",
+		"fr": "Français",
+		"en": "Anglais",
+		"ja": "Japonais"
 	}
 }

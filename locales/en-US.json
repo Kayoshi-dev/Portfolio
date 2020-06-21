@@ -13,6 +13,9 @@
 		"title": "My project"
 	},
 	"navbar": {
-		"pickLanguage": "Choose your language"
+		"pickLanguage": "Choose your language",
+		"fr": "French",
+		"en": "English",
+		"ja": "Japanese"
 	}
 }
