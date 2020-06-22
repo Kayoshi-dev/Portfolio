@@ -1,7 +1,12 @@
 {
 	"home": {
 		"welcome": "Welcome",
-		"title": ", I'm Maxime alias \"Kayoshi \""
+		"title": ", I'm Maxime alias \"Kayoshi \"",
+		"speech": "Fullstack developer, I create innovative and ergonomic software solutions.\nWhen I'm not coding, I travel all around the world \uD83D\uDEEB",
+		"project": {
+			"title": "My work",
+			"see_more": "See all my works"
+		}
 	},
 	"about": {
 		"title": "About me"

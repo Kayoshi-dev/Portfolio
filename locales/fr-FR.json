@@ -1,7 +1,12 @@
 {
 	"home": {
 		"welcome": "Bienvenue",
-		"title": ", je suis Kayoshi \"Maxime\" "
+		"title": ", je suis Kayoshi \"Maxime\"",
+		"speech": "Développeur Fullstack, je crée des solutions logicielles innovantes et ergonomiques.\nQuand je ne code pas, je voyage tout autour du monde \uD83D\uDEEB",
+		"project": {
+			"title": "Mes travaux",
+			"see_more": "Voir tous mes projets"
+		}
 	},
 	"about": {
 		"title": "A propos"

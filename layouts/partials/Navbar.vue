@@ -71,9 +71,9 @@
 
 			<div id="myNavbar" class="navbar-menu" :class="{ 'is-active': isOpen }">
 				<div class="navbar-end">
-					<nuxt-link to="/about" class="navbar-item">{{$t('about.title')}}</nuxt-link>
-					<nuxt-link to="/blog" class="navbar-item">{{$t('blog.title')}}</nuxt-link>
-					<nuxt-link to="/project" class="navbar-item">{{$t('project.title')}}</nuxt-link>
+					<nuxt-link :to="localePath('/about')" class="navbar-item">{{$t('about.title')}}</nuxt-link>
+					<nuxt-link :to="localePath('/blog')" class="navbar-item">{{$t('blog.title')}}</nuxt-link>
+					<nuxt-link :to="localePath('/project')" class="navbar-item">{{$t('project.title')}}</nuxt-link>
 					<language-picker @openLanguagePicker="openLanguagePicker" @click.prevent="isLanguagePickerOpen = true"/>
 					<a href="https://github.com/Kayoshi-dev" class="navbar-item">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
