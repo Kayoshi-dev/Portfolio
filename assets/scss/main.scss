@@ -54,6 +54,16 @@ a {
 	cursor: none !important;
 }
 
+@media screen and (max-width: 1023px) {
+	body {
+		cursor: default;
+	}
+
+	a {
+		cursor: pointer;
+	}
+}
+
 .cursor {
 	position: fixed;
 	left: 0;

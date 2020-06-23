@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<Navbar/>
-		<div id="cursor-inner" class="cursor cursor--small"></div>
-		<div id="cursor-outer" class="cursor cursor--outer"></div>
+		<div id="cursor-inner" class="cursor cursor--small is-hidden-touch"></div>
+		<div id="cursor-outer" class="cursor cursor--outer is-hidden-touch"></div>
 		<nuxt />
 	</div>
 </template>

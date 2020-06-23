@@ -13,6 +13,10 @@
 									{{$t('home.speech')}}
 								</h2>
 							</div>
+
+							<div class="column">
+								frjfjioer
+							</div>
 						</div>
 
 						<svg width="100%" height="200" fill="none">
@@ -43,6 +47,7 @@
 			<CarouselProject class="is-hidden-touch"/>
 			<CarouselProjectMobile class="is-hidden-desktop"/>
 
+			<TextScroller/>
 		</main>
 	</div>
 </template>
@@ -50,9 +55,10 @@
 <script>
 	import CarouselProject from "../layouts/partials/CarouselProject";
 	import CarouselProjectMobile from "../layouts/partials/Mobile/CarouselProjectMobile";
+	import TextScroller from "../layouts/partials/TextScroller";
 	export default {
 		name: "index",
-		components: {CarouselProjectMobile, CarouselProject}
+		components: {TextScroller, CarouselProjectMobile, CarouselProject}
 	}
 </script>
 

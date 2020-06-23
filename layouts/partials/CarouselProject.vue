@@ -1,17 +1,25 @@
 <template>
 	<div class="container">
-		<div class="cards-container is-hidden-touch">
+		<div class="cards-container">
 			<div class="card-project">
-				<img src="https://user-images.githubusercontent.com/28494879/82067735-67154580-96d1-11ea-9150-b297aa354709.png" alt="">
+				<a href="#" target="_self">
+					<img src="https://user-images.githubusercontent.com/28494879/80311798-0c7b7e80-87e2-11ea-90de-2ed4362b6259.png" alt="">
+				</a>
 			</div>
 			<div class="card-project">
-				<img src="https://user-images.githubusercontent.com/28494879/82067735-67154580-96d1-11ea-9150-b297aa354709.png" alt="">
+				<a href="#" target="_self">
+					<img src="https://user-images.githubusercontent.com/28494879/82067735-67154580-96d1-11ea-9150-b297aa354709.png" alt="">
+				</a>
 			</div>
 			<div class="card-project">
-				<img src="https://user-images.githubusercontent.com/28494879/82067735-67154580-96d1-11ea-9150-b297aa354709.png" alt="">
+				<a href="#" target="_self">
+					<img src="https://user-images.githubusercontent.com/28494879/80311798-0c7b7e80-87e2-11ea-90de-2ed4362b6259.png" alt="">
+				</a>
 			</div>
 			<div class="card-project">
-				<img src="https://user-images.githubusercontent.com/28494879/82067735-67154580-96d1-11ea-9150-b297aa354709.png" alt="">
+				<a href="#" target="_self">
+					<img src="https://user-images.githubusercontent.com/28494879/82067735-67154580-96d1-11ea-9150-b297aa354709.png" alt="">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -59,14 +67,30 @@
 <style lang="scss" scoped>
 	.cards-container {
 		//TODO: Change in future commit
-		position: relative;
-		left: -480px;
+		height: 180px;
 
 		.card-project {
+			height: 215px;
 			width: 24vw;
 			border-radius: 15px;
-			border: 1px dotted #4a4a4a;
-			position:absolute;
+			position: absolute;
+			transition: .5s box-shadow;
+			display: flex;
+			align-items: center;
+
+			&:hover {
+				box-shadow: 0 10px 20px rgba(220,220,220,0.5);
+			}
+
+			a {
+				border-radius: inherit;
+				display: inline-block;
+				transition: .5s transform;
+
+				&:hover {
+					transform: translateY(-5px);
+				}
+			}
 
 			img {
 				border-radius: inherit;
