@@ -6,6 +6,12 @@
 		"project": {
 			"title": "My work",
 			"see_more": "See all my works"
+		},
+		"skills": {
+			"title": "My Skills",
+			"language": "Languages",
+			"framework": "Web Frameworks",
+			"ui-ux": "UI & UX Design"
 		}
 	},
 	"about": {

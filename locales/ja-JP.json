@@ -6,6 +6,12 @@
 		"project": {
 			"title": "私のプロジェクト",
 			"see_more": "すべてのプロジェクトを見る"
+		},
+		"skills": {
+			"title": "私のスキル",
+			"language": "言語",
+			"framework": "Webフレームワーク",
+			"ui-ux": "UI＆UXデザイン"
 		}
 	},
 	"about": {

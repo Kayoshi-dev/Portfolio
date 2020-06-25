@@ -4,18 +4,18 @@
 			<section class="hero">
 				<div class="hero-body">
 					<div class="container">
-						<h1 class="title is-size-2">
-							<span class="highlighted-purple">{{$t('home.welcome')}}</span>{{$t('home.title')}}
-						</h1>
 						<div class="columns">
-							<div class="column">
+							<div class="column is-7">
+								<h1 class="title is-size-2">
+									<span class="highlighted-purple">{{$t('home.welcome')}}</span>{{$t('home.title')}}
+								</h1>
 								<h2 class="subtitle is-size-4">
 									{{$t('home.speech')}}
 								</h2>
 							</div>
 
 							<div class="column">
-								frjfjioer
+								<img class="hero-image" src="~/assets/img/programmer.svg" alt="A drawing of a developper in front of a computer">
 							</div>
 						</div>
 
@@ -48,6 +48,8 @@
 			<CarouselProjectMobile class="is-hidden-desktop"/>
 
 			<TextScroller/>
+
+			<Skills/>
 		</main>
 	</div>
 </template>
@@ -56,9 +58,10 @@
 	import CarouselProject from "../layouts/partials/CarouselProject";
 	import CarouselProjectMobile from "../layouts/partials/Mobile/CarouselProjectMobile";
 	import TextScroller from "../layouts/partials/TextScroller";
+	import Skills from "../layouts/partials/Skills";
 	export default {
 		name: "index",
-		components: {TextScroller, CarouselProjectMobile, CarouselProject}
+		components: {Skills, TextScroller, CarouselProjectMobile, CarouselProject}
 	}
 </script>
 
@@ -96,6 +99,13 @@
 	@media screen and (max-width: 1023px) {
 		.hero-body {
 			padding-top: 0 !important;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.hero-image {
+			position: relative;
+			top: -45px;
 		}
 	}
 </style>
