@@ -68,6 +68,8 @@
 	.cards-container {
 		//TODO: Change in future commit
 		height: 180px;
+		left: -480px;
+		position: relative;
 
 		.card-project {
 			height: 215px;
