@@ -8,7 +8,8 @@
 			"see_more": "Voir tous mes projets"
 		},
 		"skills": {
-			"title": "Mes compétences",
+			"my": "Mes",
+			"skills": "compétences",
 			"language": "Langages",
 			"framework": "Web Frameworks",
 			"ui-ux": "UI & UX Design"

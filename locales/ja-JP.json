@@ -8,7 +8,8 @@
 			"see_more": "すべてのプロジェクトを見る"
 		},
 		"skills": {
-			"title": "私のスキル",
+			"my": "私の",
+			"skills": "スキル",
 			"language": "言語",
 			"framework": "Webフレームワーク",
 			"ui-ux": "UI＆UXデザイン"

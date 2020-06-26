@@ -67,7 +67,7 @@
 <style lang="scss" scoped>
 	.cards-container {
 		//TODO: Change in future commit
-		height: 180px;
+		height: 250px;
 		left: -480px;
 		position: relative;
 

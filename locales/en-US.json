@@ -8,7 +8,8 @@
 			"see_more": "See all my works"
 		},
 		"skills": {
-			"title": "My Skills",
+			"my": "My",
+			"skills": "skills",
 			"language": "Languages",
 			"framework": "Web Frameworks",
 			"ui-ux": "UI & UX Design"
