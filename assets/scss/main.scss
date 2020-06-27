@@ -48,10 +48,23 @@ body {
 	color: $text !important;
 	font-family: 'Nunito', 'Noto Sans JP', sans-serif;
 	cursor: none;
+	background: #f7f8fb;
+
+	a, label {
+		cursor: none !important;
+	}
 }
 
-a, label {
-	cursor: none !important;
+.main-title {
+	text-transform: uppercase;
+	font-size: 4.75rem;
+	font-weight: 700;
+	font-family: 'Noto Sans JP', sans-serif;
+	line-height: 80px;
+}
+
+.main-subtitle {
+	color: #7f8c8d;
 }
 
 @media screen and (max-width: 1023px) {
@@ -61,6 +74,10 @@ a, label {
 
 	a {
 		cursor: pointer;
+	}
+
+	.main-title {
+		font-size: 2.5rem;
 	}
 }
 
@@ -102,4 +119,15 @@ a, label {
 	top: -13px;
 	border-radius: 50%;
 	z-index: 11000;
+}
+
+/**
+	HELPER
+ */
+.pb-2 {
+	padding-bottom: 2rem;
+}
+
+.pb-5 {
+	padding-bottom: 5rem !important;
 }

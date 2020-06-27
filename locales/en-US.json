@@ -4,15 +4,22 @@
 		"title": ", I'm Maxime alias \"Kayoshi \"",
 		"speech": "Fullstack developer, I create innovative and ergonomic software solutions.\nWhen I'm not coding, I travel all around the world \uD83D\uDEEB",
 		"project": {
-			"title": "My work",
-			"see_more": "See all my works"
+			"title": "My works",
+			"see_more": "See all my works",
+			"youngfood": "Youngfood is the perfect application to manage the catering of your children!",
+			"chargeon": "A desktop application allowing the management of electrical terminals"
 		},
 		"skills": {
-			"my": "My",
-			"skills": "skills",
+			"title": "My skills",
+			"subtitle": "As a developer, learning never ends, I stay constantly on the lookout for new things and technologies in order to progress and always go further... I am also interested in design in order to improve in this domain.",
 			"language": "Languages",
 			"framework": "Web Frameworks",
 			"ui-ux": "UI & UX Design"
+		},
+		"contact": {
+			"title": "Contact me",
+			"subtitle": "It is possible to contact me through the link below! I will respond as soon as possible so don't hesitate \uD83D\uDE01",
+			"email": "By email"
 		}
 	},
 	"about": {
