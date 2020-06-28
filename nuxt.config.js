@@ -13,7 +13,7 @@ export default {
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap' }
+			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap', async: true }
 		]
 	},
 	/*
@@ -31,7 +31,8 @@ export default {
 	*/
 	plugins: [
 		'@assets/ts/customCursor.ts',
-		'@assets/ts/hoverHandler.ts'
+		'@assets/ts/hoverHandler.ts',
+		'@plugins/lazysizes.client.js'
 	],
 	/*
 	** Nuxt.js dev-modules
@@ -92,7 +93,10 @@ export default {
 		/*
 		** You can extend webpack config here
 		*/
-		extend (config, ctx) {
+		extend (config, { isDev, isClient, loaders: { vue } }) {
+			if(isClient) {
+				vue.transformAssetUrls.img = ['data-src', 'src']
+			}
 		}
 	}
 }

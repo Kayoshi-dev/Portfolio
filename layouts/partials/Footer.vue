@@ -36,7 +36,7 @@
 
 <style scoped>
 	.footer-sentence {
-		color: lightgrey;
+		color: black;
 	}
 
 	.container {

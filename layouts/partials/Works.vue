@@ -12,7 +12,7 @@
 
 			<div class="columns pb-2">
 				<div class="column is-quarter react-image">
-					<img class="project-image" src="~/assets/img/Youngfood.png" alt="Image d'illustration du projet Youngfood">
+					<img class="project-image lazyload" :data-src="require(`@/assets/img/Youngfood.png`)" alt="Image d'illustration du projet Youngfood">
 				</div>
 				<div class="column has-text-right">
 					<h1 class="is-size-1 is-size-3-touch is-uppercase has-text-weight-bold project-title">Youngfood</h1>
@@ -26,7 +26,7 @@
 					<h2 class="is-size-5">{{$t('home.project.chargeon')}}</h2>
 				</div>
 				<div class="column is-quarter react-image">
-					<img class="project-image" src="https://user-images.githubusercontent.com/28494879/57990844-c20a6180-7aaa-11e9-807d-8a8e2c26a45e.png" alt="">
+					<img class="project-image lazyload" data-src="https://user-images.githubusercontent.com/28494879/57990844-c20a6180-7aaa-11e9-807d-8a8e2c26a45e.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -56,7 +56,7 @@
 				}
 			});
 
-			gsap.set(".skewElem", {transformOrigin: "left center", force3D: true});
+			gsap.set(".project-image", {transformOrigin: "left center", force3D: true});
 		}
 	}
 </script>
