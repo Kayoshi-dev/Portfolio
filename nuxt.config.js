@@ -39,7 +39,25 @@ export default {
 	*/
 	buildModules: [
 		'@nuxt/typescript-build',
+		'@aceforth/nuxt-optimized-images'
 	],
+
+	optimizedImages: {
+		inlineImageLimit: -1,
+		handleImages: ['png', 'svg', 'webp'],
+		optimizeImages: true,
+		optimizeImagesInDev: true,
+		defaultImageLoader: 'img-loader',
+		optipng: false,
+		pngquant: {
+			speed: 7,
+			quality: [0.65, 0.8]
+		},
+		webp: {
+			quality: 100
+		}
+	},
+
 	/*
 	** Nuxt.js modules
 	*/
