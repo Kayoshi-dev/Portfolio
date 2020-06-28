@@ -24,62 +24,23 @@
 						</div>
 						<div class="column" @click="closeLanguagePicker">
 							<nuxt-link :to="switchLocalePath('en')" class="language-block">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50pt" height="33pt" viewBox="0 0 50 33">
-									<g id="surface1">
-										<rect x="0" y="0" width="50" height="33" style="fill:rgb(69.803922%,13.333333%,20.392157%);fill-opacity:1;stroke:none;"/>
-										<path style="fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:300;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 0 450.106534 L 7410 450.106534 M 7410 1049.786932 L 0 1049.786932 M 0 1649.928977 L 7410 1649.928977 M 7410 2250.071023 L 0 2250.071023 M 0 2850.213068 L 7410 2850.213068 M 7410 3449.893466 L 0 3449.893466 " transform="matrix(0.00674764,0,0,0.00846154,0,0)"/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(23.529412%,23.137255%,43.137255%);fill-opacity:1;" d="M 0 0 L 20 0 L 20 17.769531 L 0 17.769531 Z M 0 0 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 1.667969 0.761719 L 2.144531 2.597656 L 0.898438 1.464844 L 2.4375 1.464844 L 1.191406 2.597656 Z M 1.667969 0.761719 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 1.667969 4.316406 L 2.144531 6.152344 L 0.898438 5.015625 L 2.4375 5.015625 L 1.191406 6.152344 Z M 1.667969 4.316406 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 1.667969 7.871094 L 2.144531 9.707031 L 0.898438 8.570312 L 2.4375 8.570312 L 1.191406 9.707031 Z M 1.667969 7.871094 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 1.667969 11.421875 L 2.144531 13.261719 L 0.898438 12.125 L 2.4375 12.125 L 1.191406 13.261719 Z M 1.667969 11.421875 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 1.667969 14.976562 L 2.144531 16.8125 L 0.898438 15.679688 L 2.4375 15.679688 L 1.191406 16.8125 Z M 1.667969 14.976562 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 3.332031 2.539062 L 3.808594 4.375 L 2.5625 3.238281 L 4.101562 3.238281 L 2.855469 4.375 Z M 3.332031 2.539062 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 3.332031 6.09375 L 3.808594 7.929688 L 2.5625 6.792969 L 4.101562 6.792969 L 2.855469 7.929688 Z M 3.332031 6.09375 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 3.332031 9.644531 L 3.808594 11.484375 L 2.5625 10.347656 L 4.101562 10.347656 L 2.855469 11.484375 Z M 3.332031 9.644531 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 3.332031 13.199219 L 3.808594 15.035156 L 2.5625 13.902344 L 4.101562 13.902344 L 2.855469 15.035156 Z M 3.332031 13.199219 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 5 0.761719 L 5.476562 2.597656 L 4.230469 1.464844 L 5.769531 1.464844 L 4.523438 2.597656 Z M 5 0.761719 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 5 4.316406 L 5.476562 6.152344 L 4.230469 5.015625 L 5.769531 5.015625 L 4.523438 6.152344 Z M 5 4.316406 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 5 7.871094 L 5.476562 9.707031 L 4.230469 8.570312 L 5.769531 8.570312 L 4.523438 9.707031 Z M 5 7.871094 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 5 11.421875 L 5.476562 13.261719 L 4.230469 12.125 L 5.769531 12.125 L 4.523438 13.261719 Z M 5 11.421875 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 5 14.976562 L 5.476562 16.8125 L 4.230469 15.679688 L 5.769531 15.679688 L 4.523438 16.8125 Z M 5 14.976562 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 6.667969 2.539062 L 7.144531 4.375 L 5.898438 3.238281 L 7.4375 3.238281 L 6.191406 4.375 Z M 6.667969 2.539062 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 6.667969 6.09375 L 7.144531 7.929688 L 5.898438 6.792969 L 7.4375 6.792969 L 6.191406 7.929688 Z M 6.667969 6.09375 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 6.667969 9.644531 L 7.144531 11.484375 L 5.898438 10.347656 L 7.4375 10.347656 L 6.191406 11.484375 Z M 6.667969 9.644531 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 6.667969 13.199219 L 7.144531 15.035156 L 5.898438 13.902344 L 7.4375 13.902344 L 6.191406 15.035156 Z M 6.667969 13.199219 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 8.332031 0.761719 L 8.808594 2.597656 L 7.5625 1.464844 L 9.101562 1.464844 L 7.855469 2.597656 Z M 8.332031 0.761719 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 8.332031 4.316406 L 8.808594 6.152344 L 7.5625 5.015625 L 9.101562 5.015625 L 7.855469 6.152344 Z M 8.332031 4.316406 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 8.332031 7.871094 L 8.808594 9.707031 L 7.5625 8.570312 L 9.101562 8.570312 L 7.855469 9.707031 Z M 8.332031 7.871094 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 8.332031 11.421875 L 8.808594 13.261719 L 7.5625 12.125 L 9.101562 12.125 L 7.855469 13.261719 Z M 8.332031 11.421875 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 8.332031 14.976562 L 8.808594 16.8125 L 7.5625 15.679688 L 9.101562 15.679688 L 7.855469 16.8125 Z M 8.332031 14.976562 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 10 2.539062 L 10.476562 4.375 L 9.230469 3.238281 L 10.769531 3.238281 L 9.523438 4.375 Z M 10 2.539062 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 10 6.09375 L 10.476562 7.929688 L 9.230469 6.792969 L 10.769531 6.792969 L 9.523438 7.929688 Z M 10 6.09375 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 10 9.644531 L 10.476562 11.484375 L 9.230469 10.347656 L 10.769531 10.347656 L 9.523438 11.484375 Z M 10 9.644531 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 10 13.199219 L 10.476562 15.035156 L 9.230469 13.902344 L 10.769531 13.902344 L 9.523438 15.035156 Z M 10 13.199219 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 11.667969 0.761719 L 12.144531 2.597656 L 10.898438 1.464844 L 12.4375 1.464844 L 11.191406 2.597656 Z M 11.667969 0.761719 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 11.667969 4.316406 L 12.144531 6.152344 L 10.898438 5.015625 L 12.4375 5.015625 L 11.191406 6.152344 Z M 11.667969 4.316406 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 11.667969 7.871094 L 12.144531 9.707031 L 10.898438 8.570312 L 12.4375 8.570312 L 11.191406 9.707031 Z M 11.667969 7.871094 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 11.667969 11.421875 L 12.144531 13.261719 L 10.898438 12.125 L 12.4375 12.125 L 11.191406 13.261719 Z M 11.667969 11.421875 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 11.667969 14.976562 L 12.144531 16.8125 L 10.898438 15.679688 L 12.4375 15.679688 L 11.191406 16.8125 Z M 11.667969 14.976562 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 13.332031 2.539062 L 13.808594 4.375 L 12.5625 3.238281 L 14.101562 3.238281 L 12.855469 4.375 Z M 13.332031 2.539062 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 13.332031 6.09375 L 13.808594 7.929688 L 12.5625 6.792969 L 14.101562 6.792969 L 12.855469 7.929688 Z M 13.332031 6.09375 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 13.332031 9.644531 L 13.808594 11.484375 L 12.5625 10.347656 L 14.101562 10.347656 L 12.855469 11.484375 Z M 13.332031 9.644531 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 13.332031 13.199219 L 13.808594 15.035156 L 12.5625 13.902344 L 14.101562 13.902344 L 12.855469 15.035156 Z M 13.332031 13.199219 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 15 0.761719 L 15.476562 2.597656 L 14.230469 1.464844 L 15.769531 1.464844 L 14.523438 2.597656 Z M 15 0.761719 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 15 4.316406 L 15.476562 6.152344 L 14.230469 5.015625 L 15.769531 5.015625 L 14.523438 6.152344 Z M 15 4.316406 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 15 7.871094 L 15.476562 9.707031 L 14.230469 8.570312 L 15.769531 8.570312 L 14.523438 9.707031 Z M 15 7.871094 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 15 11.421875 L 15.476562 13.261719 L 14.230469 12.125 L 15.769531 12.125 L 14.523438 13.261719 Z M 15 11.421875 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 15 14.976562 L 15.476562 16.8125 L 14.230469 15.679688 L 15.769531 15.679688 L 14.523438 16.8125 Z M 15 14.976562 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 16.667969 2.539062 L 17.144531 4.375 L 15.898438 3.238281 L 17.4375 3.238281 L 16.191406 4.375 Z M 16.667969 2.539062 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 16.667969 6.09375 L 17.144531 7.929688 L 15.898438 6.792969 L 17.4375 6.792969 L 16.191406 7.929688 Z M 16.667969 6.09375 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 16.667969 9.644531 L 17.144531 11.484375 L 15.898438 10.347656 L 17.4375 10.347656 L 16.191406 11.484375 Z M 16.667969 9.644531 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 16.667969 13.199219 L 17.144531 15.035156 L 15.898438 13.902344 L 17.4375 13.902344 L 16.191406 15.035156 Z M 16.667969 13.199219 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 18.332031 0.761719 L 18.808594 2.597656 L 17.5625 1.464844 L 19.101562 1.464844 L 17.855469 2.597656 Z M 18.332031 0.761719 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 18.332031 4.316406 L 18.808594 6.152344 L 17.5625 5.015625 L 19.101562 5.015625 L 17.855469 6.152344 Z M 18.332031 4.316406 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 18.332031 7.871094 L 18.808594 9.707031 L 17.5625 8.570312 L 19.101562 8.570312 L 17.855469 9.707031 Z M 18.332031 7.871094 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 18.332031 11.421875 L 18.808594 13.261719 L 17.5625 12.125 L 19.101562 12.125 L 17.855469 13.261719 Z M 18.332031 11.421875 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 18.332031 14.976562 L 18.808594 16.8125 L 17.5625 15.679688 L 19.101562 15.679688 L 17.855469 16.8125 Z M 18.332031 14.976562 "/>
+								<svg width="50" height="33" viewBox="0 0 50 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<path d="M50 0H0V33H50V0Z" fill="#012169"/>
+										<path d="M0 0L50 33L0 0ZM50 0L0 33Z" fill="black"/>
+										<path d="M50 0L0 33M0 0L50 33L0 0Z" stroke="white" stroke-width="5.74456"/>
+										<path d="M0 0L50 33L0 0ZM50 0L0 33Z" fill="black"/>
+										<path d="M50 0L0 33M0 0L50 33L0 0Z" stroke="#C8102E" stroke-width="3.82971"/>
+										<path d="M25 0V33V0ZM0 16.5H50Z" fill="black"/>
+										<path d="M0 16.5H50M25 0V33V0Z" stroke="white" stroke-width="9.57427"/>
+										<path d="M25 0V33V0ZM0 16.5H50Z" fill="black"/>
+										<path d="M0 16.5H50M25 0V33V0Z" stroke="#C8102E" stroke-width="5.74456"/>
 									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="50" height="33" fill="white"/>
+										</clipPath>
+									</defs>
 								</svg>
 								<h3 class="subtitle is-inline-block is-uppercase">{{$t('navbar.en')}}</h3>
 							</nuxt-link>
@@ -99,7 +60,7 @@
 		</section>
 		<nav class="navbar is-transparent">
 			<div class="navbar-brand">
-				<nuxt-link to="/" class="navbar-item navbar-item-home">Kayoshi-dev</nuxt-link>
+				<nuxt-link :to="localePath('/')" class="navbar-item navbar-item-home">Kayoshi-dev</nuxt-link>
 
 				<div class="navbar-burger burger" data-target="myNavbar" @click="isOpen = !isOpen" :class="{ 'is-active': isOpen }">
 					<span></span>
@@ -110,9 +71,9 @@
 
 			<div id="myNavbar" class="navbar-menu" :class="{ 'is-active': isOpen }">
 				<div class="navbar-end">
-					<nuxt-link to="/about" class="navbar-item">{{$t('about.title')}}</nuxt-link>
-					<nuxt-link to="/blog" class="navbar-item">{{$t('blog.title')}}</nuxt-link>
-					<nuxt-link to="/project" class="navbar-item">{{$t('project.title')}}</nuxt-link>
+					<nuxt-link :to="localePath('/about')" class="navbar-item">{{$t('about.title')}}</nuxt-link>
+					<nuxt-link :to="localePath('/blog')" class="navbar-item">{{$t('blog.title')}}</nuxt-link>
+					<nuxt-link :to="localePath('/project')" class="navbar-item">{{$t('project.title')}}</nuxt-link>
 					<language-picker @openLanguagePicker="openLanguagePicker" @click.prevent="isLanguagePickerOpen = true"/>
 					<a href="https://github.com/Kayoshi-dev" class="navbar-item">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +141,7 @@
 
 <style lang="scss">
 	header {
-		padding: 2.5rem 1.5rem 5rem 1.5rem;
+		padding: 2.5rem 1.5rem 2.5rem 1.5rem;
 
 		.language-picker__interface {
 			position: fixed;

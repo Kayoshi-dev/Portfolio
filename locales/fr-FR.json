@@ -1,7 +1,29 @@
 {
 	"home": {
 		"welcome": "Bienvenue",
-		"title": ", je suis Kayoshi \"Maxime\" "
+		"title": ", je suis Kayoshi \"Maxime\"",
+		"speech": "Développeur Fullstack, je crée des solutions logicielles innovantes et ergonomiques.\nQuand je ne code pas, je voyage tout autour du monde \uD83D\uDEEB",
+		"project": {
+			"title": "Mes travaux",
+			"see_more": "Voir tous mes projets",
+			"youngfood": "Youngfood c'est l'application parfaite pour gérer la restauration de vos enfants!",
+			"chargeon": "Une application bureau permettant la gestion de bornes éléctriques"
+		},
+		"skills": {
+			"title": "Mes compétences",
+			"subtitle": "En tant que développeur, l'apprentissage ne se termine jamais, je reste en veille constante sur les nouveautés et les technologies afin de progresser et aller toujours plus loin... Je m'interesse également au design afin de m'améliorer dans ce domaine.",
+			"language": "Langages",
+			"framework": "Web Frameworks",
+			"ui-ux": "UI & UX Design",
+			"ux": "User Experience",
+			"ui": "User Interface",
+			"modeling": "Maquettage"
+		},
+		"contact": {
+			"title": "Me contacter",
+			"subtitle": "Il est possible de me contacter grâce au lien ci-dessous, je répondrais dès que possible \uD83D\uDE01",
+			"email": "Par e-mail"
+		}
 	},
 	"about": {
 		"title": "A propos"
@@ -17,5 +39,10 @@
 		"fr": "Français",
 		"en": "Anglais",
 		"ja": "Japonais"
+	},
+	"footer": {
+		"sitemap": "Plan du site",
+		"home": "Accueil",
+		"language": "Langue"
 	}
 }
