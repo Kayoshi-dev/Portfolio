@@ -12,21 +12,21 @@
 
 			<div class="columns pb-2">
 				<div class="column is-quarter react-image">
-					<img class="is-left" src="~/assets/img/Youngfood.png" alt="Image d'illustration du projet Youngfood">
+					<img class="project-image" src="~/assets/img/Youngfood.png" alt="Image d'illustration du projet Youngfood">
 				</div>
 				<div class="column has-text-right">
-					<h1 class="is-size-1 is-uppercase has-text-weight-bold project-title">Youngfood</h1>
+					<h1 class="is-size-1 is-size-3-touch is-uppercase has-text-weight-bold project-title">Youngfood</h1>
 					<h2 class="is-size-5">{{$t('home.project.youngfood')}}</h2>
 				</div>
 			</div>
 
 			<div class="columns pb-2">
 				<div class="column">
-					<h1 class="is-size-1 is-uppercase has-text-weight-bold project-title">Chargeon</h1>
+					<h1 class="is-size-1 is-size-3-touch is-uppercase has-text-weight-bold project-title">Chargeon</h1>
 					<h2 class="is-size-5">{{$t('home.project.chargeon')}}</h2>
 				</div>
 				<div class="column is-quarter react-image">
-					<img class="is-left" src="https://user-images.githubusercontent.com/28494879/57990844-c20a6180-7aaa-11e9-807d-8a8e2c26a45e.png" alt="">
+					<img class="project-image" src="https://user-images.githubusercontent.com/28494879/57990844-c20a6180-7aaa-11e9-807d-8a8e2c26a45e.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -39,19 +39,24 @@
     export default {
         name: "CarouselProject",
 		mounted() {
+        	//via gsap example
 			gsap.registerPlugin(ScrollTrigger);
 
-			gsap.utils.toArray('.react-image').forEach((section, index) => {
-				const w = section.querySelector('img');
-				const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
-				gsap.fromTo(w, {  x  }, {
-					x: xEnd,
-					scrollTrigger: {
-						trigger: section,
-						scrub: 0.5
+			let proxy = { skew: 0 },
+				skewSetter = gsap.quickSetter(".project-image", "skewY", "deg"),
+				clamp = gsap.utils.clamp(-20, 20);
+
+			ScrollTrigger.create({
+				onUpdate: (self) => {
+					let skew = clamp(self.getVelocity() / -1500);
+					if (Math.abs(skew) > Math.abs(proxy.skew)) {
+						proxy.skew = skew;
+						gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
 					}
-				});
+				}
 			});
+
+			gsap.set(".skewElem", {transformOrigin: "left center", force3D: true});
 		}
 	}
 </script>

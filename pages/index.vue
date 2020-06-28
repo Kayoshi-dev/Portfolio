@@ -77,13 +77,6 @@
 		}
 	}
 
-	.link-projet {
-		color: lighten(#9b59b6, 5%);
-		font-weight: 700;
-		vertical-align: center;
-		transition: .5s all;
-	}
-
 	.section {
 		padding-top: 1rem;
 		padding-bottom: 1rem;

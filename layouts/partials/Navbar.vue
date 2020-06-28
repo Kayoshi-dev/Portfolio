@@ -60,7 +60,7 @@
 		</section>
 		<nav class="navbar is-transparent">
 			<div class="navbar-brand">
-				<nuxt-link to="/" class="navbar-item navbar-item-home">Kayoshi-dev</nuxt-link>
+				<nuxt-link :to="localePath('/')" class="navbar-item navbar-item-home">Kayoshi-dev</nuxt-link>
 
 				<div class="navbar-burger burger" data-target="myNavbar" @click="isOpen = !isOpen" :class="{ 'is-active': isOpen }">
 					<span></span>
