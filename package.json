@@ -14,9 +14,11 @@
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/pwa": "^3.0.0-0",
     "gsap": "^3.3.4",
+    "imagemin": "^5.0.0",
     "lazysizes": "^5.2.2",
     "nuxt": "^2.13.0",
-    "nuxt-i18n": "^6.12.2"
+    "nuxt-i18n": "^6.12.2",
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.0.1",

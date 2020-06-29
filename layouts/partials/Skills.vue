@@ -11,16 +11,16 @@
 			</div>
 			<div class="columns is-mobile has-text-centered">
 				<div class="column">
-					<img class="logo" src="~/assets/img/php.svg" alt="Logo de Symfony">
+					<img class="logo lazyload" :data-src="require(`@/assets/img/php.svg`)" alt="Logo de Symfony">
 				</div>
 				<div class="column">
-					<img class="logo" src="~/assets/img/vuejs.svg" alt="Logo de Symfony">
+					<img class="logo lazyload" :data-src="require(`@/assets/img/vuejs.svg`)" alt="Logo de Symfony">
 				</div>
 				<div class="column">
-					<img class="logo" src="~/assets/img/symfony.svg" alt="Logo de Symfony">
+					<img class="logo lazyload" :data-src="require(`@/assets/img/symfony.svg`)" alt="Logo de Symfony">
 				</div>
 				<div class="column">
-					<img class="logo" src="~/assets/img/nuxt.svg" alt="Logo de Symfony">
+					<img class="logo lazyload" :data-src="require(`@/assets/img/nuxt.svg`)" alt="Logo de Symfony">
 				</div>
 			</div>
 			<div class="columns">

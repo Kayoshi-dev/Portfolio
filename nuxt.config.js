@@ -13,7 +13,7 @@ export default {
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap', async: true }
+			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap', defer: true }
 		]
 	},
 	/*
@@ -54,7 +54,7 @@ export default {
 			quality: [0.65, 0.8]
 		},
 		webp: {
-			quality: 100
+			quality: 85
 		}
 	},
 
@@ -113,7 +113,8 @@ export default {
 		*/
 		extend (config, { isDev, isClient, loaders: { vue } }) {
 			if(isClient) {
-				vue.transformAssetUrls.img = ['data-src', 'src']
+				vue.transformAssetUrls.img = ['data-src', 'src'];
+				vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
 			}
 		}
 	}
