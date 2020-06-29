@@ -50,7 +50,7 @@ export default {
 		defaultImageLoader: 'img-loader',
 		optipng: false,
 		pngquant: {
-			speed: 7,
+			speed: 6,
 			quality: [0.65, 0.8]
 		},
 		webp: {
