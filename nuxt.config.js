@@ -99,8 +99,15 @@ export default {
 	},
 
 	webfontloader: {
-		google: {
-			families: ['Noto Sans JP:400,700&display=swap', 'Nunito:400,700&display=swap']
+		custom: {
+			families: [
+				'Noto Sans JP:n3,n7',
+				'Nunito:n3:n7'
+			],
+			urls: [
+				'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap',
+				'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap'
+			]
 		}
 	},
 
