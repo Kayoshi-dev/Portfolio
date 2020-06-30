@@ -12,8 +12,7 @@ export default {
 			{ hid: 'description', name: 'description', content: 'Bienvenue sur le portfolio de Kayoshi-dev!' }
 		],
 		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap' }
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 		]
 	},
 	/*
@@ -31,14 +30,33 @@ export default {
 	*/
 	plugins: [
 		'@assets/ts/customCursor.ts',
-		'@assets/ts/hoverHandler.ts'
+		'@assets/ts/hoverHandler.ts',
+		'@plugins/lazysizes.client.js'
 	],
 	/*
 	** Nuxt.js dev-modules
 	*/
 	buildModules: [
 		'@nuxt/typescript-build',
+		'@aceforth/nuxt-optimized-images'
 	],
+
+	optimizedImages: {
+		inlineImageLimit: -1,
+		handleImages: ['png', 'svg', 'webp'],
+		optimizeImages: true,
+		optimizeImagesInDev: true,
+		defaultImageLoader: 'img-loader',
+		optipng: false,
+		pngquant: {
+			speed: 6,
+			quality: [0.65, 0.8]
+		},
+		webp: {
+			quality: 85
+		}
+	},
+
 	/*
 	** Nuxt.js modules
 	*/
@@ -46,7 +64,8 @@ export default {
 		// Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
 		'@nuxtjs/bulma',
 		'@nuxtjs/pwa',
-		'nuxt-i18n'
+		'nuxt-i18n',
+		'nuxt-webfontloader'
 	],
 
 	i18n: {
@@ -78,6 +97,20 @@ export default {
 		defaultLocale: 'fr',
 		langDir: 'locales/'
 	},
+
+	webfontloader: {
+		custom: {
+			families: [
+				'Noto Sans JP:n3,n7',
+				'Nunito:n3:n7'
+			],
+			urls: [
+				'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap',
+				'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap'
+			]
+		}
+	},
+
 	/*
 	** Build configuration
 	*/
@@ -92,7 +125,11 @@ export default {
 		/*
 		** You can extend webpack config here
 		*/
-		extend (config, ctx) {
+		extend (config, { isDev, isClient, loaders: { vue } }) {
+			if(isClient) {
+				vue.transformAssetUrls.img = ['data-src', 'src'];
+				vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
+			}
 		}
 	}
 }

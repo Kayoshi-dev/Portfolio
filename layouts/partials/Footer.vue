@@ -8,7 +8,8 @@
 						<ul>
 							<li><nuxt-link :to="localePath('/')" class="link-projet">{{$t('footer.home')}}</nuxt-link></li>
 							<li><nuxt-link :to="localePath('/about')" class="link-projet">{{$t('about.title')}}</nuxt-link></li>
-							<li><nuxt-link :to="localePath('/project')" class="link-projet">{{$t('blog.title')}}</nuxt-link></li>
+							<li><nuxt-link :to="localePath('/blog')" class="link-projet">{{$t('blog.title')}}</nuxt-link></li>
+							<li><nuxt-link :to="localePath('/project')" class="link-projet">{{$t('project.title')}}</nuxt-link></li>
 						</ul>
 					</div>
 
@@ -34,12 +35,18 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.footer-sentence {
-		color: lightgrey;
+		color: black;
 	}
 
 	.container {
 		border-top: 1px solid lightgrey;
+	}
+
+	@media screen and (max-width: 1023px) {
+		li {
+			height: 48px;
+		}
 	}
 </style>

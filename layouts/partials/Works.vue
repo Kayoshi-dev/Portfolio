@@ -12,7 +12,13 @@
 
 			<div class="columns pb-2">
 				<div class="column is-quarter react-image">
-					<img class="project-image" src="~/assets/img/Youngfood.png" alt="Image d'illustration du projet Youngfood">
+					<figure>
+						<picture>
+							<source :data-srcset="require(`@/assets/img/Youngfood.png?webp`)" type="image/webp" srcset="">
+							<source :data-srcset="require(`@/assets/img/Youngfood.png`)" type="image/png" srcset="">
+							<img class="project-image lazyload" :data-src="require(`@/assets/img/Youngfood.png`)" src="" alt="Image d'illustration du projet Youngfood">
+						</picture>
+					</figure>
 				</div>
 				<div class="column has-text-right">
 					<h1 class="is-size-1 is-size-3-touch is-uppercase has-text-weight-bold project-title">Youngfood</h1>
@@ -26,7 +32,13 @@
 					<h2 class="is-size-5">{{$t('home.project.chargeon')}}</h2>
 				</div>
 				<div class="column is-quarter react-image">
-					<img class="project-image" src="https://user-images.githubusercontent.com/28494879/57990844-c20a6180-7aaa-11e9-807d-8a8e2c26a45e.png" alt="">
+					<figure>
+						<picture>
+							<source :data-srcset="require(`@/assets/img/Chargeon.png?webp`)" type="image/webp" srcset="">
+							<source :data-srcset="require(`@/assets/img/Chargeon.png`)" type="image/png" srcset="">
+							<img class="project-image lazyload" :data-src="require(`@/assets/img/Chargeon.png`)" src="" alt="Image d'illustration du projet Chargeon">
+						</picture>
+					</figure>
 				</div>
 			</div>
 		</div>
@@ -37,7 +49,7 @@
 	import { gsap } from 'gsap';
 	import ScrollTrigger from "gsap/dist/ScrollTrigger";
     export default {
-        name: "CarouselProject",
+        name: "Works",
 		mounted() {
         	//via gsap example
 			gsap.registerPlugin(ScrollTrigger);
@@ -56,7 +68,7 @@
 				}
 			});
 
-			gsap.set(".skewElem", {transformOrigin: "left center", force3D: true});
+			gsap.set(".project-image", {transformOrigin: "left center", force3D: true});
 		}
 	}
 </script>
