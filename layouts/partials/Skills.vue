@@ -41,10 +41,11 @@
 				</div>
 
 				<div class="column">
-					<h2 class="is-size-4 progress-title">{{$t('home.skills.ui-ux')}}</h2>
+					<h2 class="is-size-4 progress-title">{{$t('home.skills.misc')}}</h2>
 					<label class="is-block" for="ux-skill">{{$t('home.skills.ux')}}</label><progress id="ux-skill" class="progress is-small" value="20" max="100">20%</progress>
 					<label class="is-block" for="ui-skill">{{$t('home.skills.ui')}}</label><progress id="ui-skill" class="progress is-small" value="25" max="100">25%</progress>
 					<label class="is-block" for="maquettage-skill">{{$t('home.skills.modeling')}}</label><progress id="maquettage-skill" class="progress is-small" value="45" max="100">45%</progress>
+					<label class="is-block" for="seo-skill">SEO</label><progress id="seo-skill" class="progress is-small" value="20" max="100">20%</progress>
 				</div>
 			</div>
 		</div>
