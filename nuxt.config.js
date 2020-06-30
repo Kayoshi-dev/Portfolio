@@ -100,7 +100,7 @@ export default {
 
 	webfontloader: {
 		google: {
-			families: ['Noto Sans JP:400,700', 'Nunito:400,700']
+			families: ['Noto Sans JP:400,700&display=swap', 'Nunito:400,700&display=swap']
 		}
 	},
 
