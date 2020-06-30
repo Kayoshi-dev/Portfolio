@@ -12,8 +12,7 @@ export default {
 			{ hid: 'description', name: 'description', content: 'Bienvenue sur le portfolio de Kayoshi-dev!' }
 		],
 		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap', defer: true }
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 		]
 	},
 	/*
@@ -65,7 +64,8 @@ export default {
 		// Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
 		'@nuxtjs/bulma',
 		'@nuxtjs/pwa',
-		'nuxt-i18n'
+		'nuxt-i18n',
+		'nuxt-webfontloader'
 	],
 
 	i18n: {
@@ -97,6 +97,13 @@ export default {
 		defaultLocale: 'fr',
 		langDir: 'locales/'
 	},
+
+	webfontloader: {
+		google: {
+			families: ['Noto Sans JP:400,700', 'Nunito:400,700']
+		}
+	},
+
 	/*
 	** Build configuration
 	*/

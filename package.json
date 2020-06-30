@@ -18,6 +18,7 @@
     "lazysizes": "^5.2.2",
     "nuxt": "^2.13.0",
     "nuxt-i18n": "^6.12.2",
+    "nuxt-webfontloader": "^1.1.0",
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
