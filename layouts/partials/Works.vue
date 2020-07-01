@@ -68,7 +68,7 @@
 				}
 			});
 
-			gsap.set(".project-image", {transformOrigin: "left center", force3D: true});
+			gsap.set(".project-image", {transformOrigin: "center", force3D: true});
 		}
 	}
 </script>
