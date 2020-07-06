@@ -43,10 +43,10 @@
 </template>
 
 <script>
-	import Works from "../layouts/partials/Works";
-	import Skills from "../layouts/partials/Skills";
-	import Contact from "../layouts/Contact";
-	import Footer from "../layouts/partials/Footer";
+	import Works from "../components/home/Works";
+	import Skills from "../components/home/Skills";
+	import Contact from "../components/home/Contact";
+	import Footer from "../components/shared/Footer";
 
 	export default {
 		name: "index",
