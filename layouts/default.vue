@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Navbar from './partials/Navbar.vue'
+import Navbar from '../components/shared/Navbar.vue'
 export default Vue.extend({
 	components: {
 		Navbar
