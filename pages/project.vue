@@ -2,7 +2,7 @@
 	<div class="section">
 		<div class="container">
 			<h1 class="main-title">{{$t('project.title')}}</h1>
-			<h2 class="main-subtitle is-size-5">Une liste non exhaustive des différents projets auxquels j'ai contribué.</h2>
+			<h2 class="main-subtitle is-size-5">{{$t('project.subtitle')}}</h2>
 			<ListProjects/>
 			<Footer/>
 		</div>
@@ -11,7 +11,7 @@
 
 <script>
     import ListProjects from "../components/projects/ListProjects";
-	import Footer from "../layouts/partials/Footer";
+	import Footer from "../components/shared/Footer";
 	export default {
         name: "project",
 		components: {Footer, ListProjects}

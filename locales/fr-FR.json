@@ -32,7 +32,20 @@
 		"title": "Blog"
 	},
 	"project": {
-		"title": "Mes projets"
+		"title": "Mes projets",
+		"subtitle": "Une liste non exhaustive des différents projets auxquels j'ai contribué.",
+		"youngfood": {
+			"desc": "Une plateforme en ligne permettant la reservation de la cantine pour ses enfants.",
+			"date": "Hiver 2020"
+		},
+		"chargeon": {
+			"desc": "Une application lourde permettant la gestion de bornes éléctriques à distances.",
+			"date": "Printemps 2019"
+		},
+		"celestaria": {
+			"desc": "Conception et réalisation d'une plateforme d'un court-métrage original.",
+			"date": "Été 2020"
+		}
 	},
 	"navbar": {
 		"pickLanguage": "Choisissez votre langue",

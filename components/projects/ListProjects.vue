@@ -3,25 +3,31 @@
 		<div class="column">
 			<div class="card">
 				<div class="card-image">
-					<figure class="image is-4by3">
-						<img class="lazyload" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+					<figure class="image is-5by3">
+						<img class="lazyload" :src="require(`@/assets/img/Youngfood_logo.svg`)" alt="Placeholder image">
 					</figure>
 				</div>
 				<div class="card-content">
 					<div class="media">
 						<div class="media-content">
-							<p class="title is-4">Youngfood</p>
+							<p class="title is-4">
+								Youngfood
+								<a href="https://github.com/GroupeNRM/Youngfood">
+									<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54688 24.9755C9.17188 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04688 20.1054 4.4375 18.9679 3.90625 18.6635C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73438 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04688 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06491 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32798 11.4688 6.1838 12.5313 6.1838C13.5938 6.1838 14.6563 6.32798 15.6563 6.61635C18.0469 4.95025 19.0938 5.30269 19.0938 5.30269C19.7812 7.06491 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C21.4219 23.2774 25 18.4713 25 12.8162C25 5.73524 19.4062 0 12.5 0Z" fill="#363636"/>
+									</svg>
+								</a>
+							</p>
 						</div>
 					</div>
 
 					<div class="content">
-						Une plateforme en ligne permettant la reservation de la cantine pour ses enfants.
-						Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-						<a href="#">#css</a> <a href="#">#responsive</a>
+						<p>{{$t('project.youngfood.desc')}}</p>
+						<a href="#">#agile</a> <a href="#">#school</a>
 						<br>
-						<time datetime="2020">Début 2020</time>
+						<time datetime="2020">{{$t('project.youngfood.date')}}</time>
 						<div class="tags">
-							<span class="tag is-primary is-light">Symfony</span>
+							<span class="tag is-symfony is-light">Symfony</span>
 							<span class="tag is-success is-light">VueJS</span>
 							<span class="tag is-link is-light">Docker</span>
 							<span class="tag is-warning is-light">MySQL</span>
@@ -33,25 +39,32 @@
 		<div class="column">
 			<div class="card">
 				<div class="card-image">
-					<figure class="image is-4by3">
-						<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+					<figure class="image is-5by3">
+						<img class="lazyload" :src="require(`@/assets/img/Chargeon.png`)" alt="Placeholder image">
 					</figure>
 				</div>
 				<div class="card-content">
 					<div class="media">
 						<div class="media-content">
-							<p class="title is-4">John Smith</p>
+							<p class="title is-4">
+								Chargéon
+								<a href="https://github.com/Kayoshi-dev/ProjetChargeon">
+									<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54688 24.9755C9.17188 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04688 20.1054 4.4375 18.9679 3.90625 18.6635C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73438 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04688 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06491 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32798 11.4688 6.1838 12.5313 6.1838C13.5938 6.1838 14.6563 6.32798 15.6563 6.61635C18.0469 4.95025 19.0938 5.30269 19.0938 5.30269C19.7812 7.06491 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C21.4219 23.2774 25 18.4713 25 12.8162C25 5.73524 19.4062 0 12.5 0Z" fill="#363636"/>
+									</svg>
+								</a>
+							</p>
 						</div>
 					</div>
 
 					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-						<a href="#">#css</a> <a href="#">#responsive</a>
+						<p>{{$t('project.chargeon.desc')}}</p>
+						<a href="#">#agile</a> <a href="#">#school</a>
 						<br>
-						<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+						<time datetime="2019">{{$t('project.chargeon.date')}}</time>
 						<div class="tags">
 							<span class="tag is-success is-light">C#</span>
+							<span class="tag is-warning is-light">MySQL</span>
 						</div>
 					</div>
 				</div>
@@ -60,24 +73,33 @@
 		<div class="column">
 			<div class="card">
 				<div class="card-image">
-					<figure class="image is-4by3">
+					<figure class="image is-5by3">
 						<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
 					</figure>
 				</div>
 				<div class="card-content">
 					<div class="media">
 						<div class="media-content">
-							<p class="title is-4">John Smith</p>
-							<p class="subtitle is-6">@johnsmith</p>
+							<p class="title is-4">
+								"Celestaria"
+								<a href="https://github.com/Mysteradev">
+									<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54688 24.9755C9.17188 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04688 20.1054 4.4375 18.9679 3.90625 18.6635C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73438 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04688 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06491 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32798 11.4688 6.1838 12.5313 6.1838C13.5938 6.1838 14.6563 6.32798 15.6563 6.61635C18.0469 4.95025 19.0938 5.30269 19.0938 5.30269C19.7812 7.06491 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C21.4219 23.2774 25 18.4713 25 12.8162C25 5.73524 19.4062 0 12.5 0Z" fill="#363636"/>
+									</svg>
+								</a>
+							</p>
 						</div>
 					</div>
 
 					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-						<a href="#">#css</a> <a href="#">#responsive</a>
+						<p>{{$t('project.celestaria.desc')}}</p>
+						<a href="#">#agile</a> <a href="#">#prestation</a> <a href="#">#mystera</a>
 						<br>
-						<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+						<time datetime="2020">{{$t('project.celestaria.date')}}</time>
+						<div class="tags">
+							<span class="tag is-light">Symfony</span>
+							<span class="tag is-success is-light">VueJS</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -98,6 +120,21 @@
 		&:hover {
 			box-shadow: 0 10px 20px rgba(220,220,220,0.5);
 			transform: translateY(-5px);
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.is-symfony {
+		background-color: black;
+		color: black;
+	}
+
+	@media screen and (max-width: 768px) {
+		.media-content {
+			overflow-x: unset;
 		}
 	}
 

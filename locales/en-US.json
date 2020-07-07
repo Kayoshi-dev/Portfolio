@@ -32,7 +32,20 @@
 		"title": "Blog"
 	},
 	"project": {
-		"title": "My project"
+		"title": "My project",
+		"subtitle": "A non-exhaustive list of the different projects to which I have contributed.",
+		"youngfood": {
+			"desc": "An online platform allowing the reservation of the canteen for its children.",
+			"date": "Winter 2020"
+		},
+		"chargeon": {
+			"desc": "An application allowing the management of remote electrical terminals.",
+			"date": "Spring 2019"
+		},
+		"celestaria": {
+			"desc": "Design and production of a platform for an original short film.",
+			"date": "Summer 2020"
+		}
 	},
 	"navbar": {
 		"pickLanguage": "Choose your language",
