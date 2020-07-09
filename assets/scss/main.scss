@@ -44,6 +44,14 @@
 	background-color: black;
 }
 
+.page-enter-active, .page-leave-active {
+	transition: opacity .5s;
+}
+
+.page-enter, .page-leave-to {
+	opacity: 0;
+}
+
 body {
 	color: $text !important;
 	font-family: 'Nunito', 'Noto Sans JP', sans-serif;
