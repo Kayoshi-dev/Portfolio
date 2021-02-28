@@ -12,6 +12,8 @@ export default {
     ]
   },
 
+  target: 'static',
+
   loading: {
     color: '#232ED1',
   },
