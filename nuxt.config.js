@@ -1,135 +1,74 @@
-
 export default {
-	mode: 'universal',
-	/*
-	** Headers of the page
-	*/
-	head: {
-		title: 'Kayoshi-dev',
-		meta: [
-			{ charset: 'utf-8' },
-			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: 'Bienvenue sur le portfolio de Kayoshi-dev!' }
-		],
-		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-		]
-	},
-	/*
-	** Customize the progress-bar color
-	*/
-	loading: { color: '#9b59b6' },
-	/*
-	** Global CSS
-	*/
-	css: [
-		'@/assets/scss/main.scss'
-	],
-	/*
-	** Plugins to load before mounting the App
-	*/
-	plugins: [
-		'@assets/ts/customCursor.ts',
-		'@assets/ts/hoverHandler.ts',
-		'@plugins/lazysizes.client.js'
-	],
-	/*
-	** Nuxt.js dev-modules
-	*/
-	buildModules: [
-		'@nuxt/typescript-build',
-		'@aceforth/nuxt-optimized-images'
-	],
+  // Global page headers: https://go.nuxtjs.dev/config-head
+  head: {
+    title: 'portfolio',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
+  },
 
-	optimizedImages: {
-		inlineImageLimit: -1,
-		handleImages: ['png', 'svg', 'webp'],
-		optimizeImages: true,
-		optimizeImagesInDev: true,
-		defaultImageLoader: 'img-loader',
-		optipng: false,
-		pngquant: {
-			speed: 6,
-			quality: [0.65, 0.8]
-		},
-		webp: {
-			quality: 85
-		}
-	},
+  loading: {
+    color: '#232ED1',
+  },
 
-	/*
-	** Nuxt.js modules
-	*/
-	modules: [
-		// Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-		'@nuxtjs/bulma',
-		'@nuxtjs/pwa',
-		'nuxt-i18n',
-		'nuxt-webfontloader'
-	],
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    '~/assets/scss/main.scss'
+  ],
 
-	i18n: {
-		locales: [
-			{
-				name: 'French',
-				code: 'fr',
-				iso: 'fr-FR'
-			},
-			{
-				name: 'English',
-				code: 'en',
-				iso: 'en-US'
-			},
-			{
-				name: 'Japanese',
-				code: 'ja',
-				iso: 'ja-JP',
-			}
-		],
-		vueI18n: {
-			fallbackLocale: 'en',
-			messages: {
-				fr: require('./locales/fr-FR.json'),
-				en: require('./locales/en-US.json'),
-				ja: require('./locales/ja-JP.json')
-			}
-		},
-		defaultLocale: 'fr',
-		langDir: 'locales/'
-	},
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  plugins: [
+  ],
 
-	webfontloader: {
-		custom: {
-			families: [
-				'Noto Sans JP:n3,n7',
-				'Nunito:n3:n7'
-			],
-			urls: [
-				'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap',
-				'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;700&display=swap'
-			]
-		}
-	},
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
 
-	/*
-	** Build configuration
-	*/
-	build: {
-		postcss: {
-			preset: {
-				features: {
-					customProperties: false
-				}
-			}
-		},
-		/*
-		** You can extend webpack config here
-		*/
-		extend (config, { isDev, isClient, loaders: { vue } }) {
-			if(isClient) {
-				vue.transformAssetUrls.img = ['data-src', 'src'];
-				vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
-			}
-		}
-	}
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [
+  ],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/buefy
+    ['nuxt-buefy', {css: false}],
+    // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios',
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
+    'nuxt-webfontloader'
+  ],
+
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  axios: {},
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: 'en'
+    }
+  },
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+  },
+
+  webfontloader: {
+    custom: {
+      families: [
+        'Open Sans:n3,n4',
+        'Roboto:n3,n7'
+      ],
+      urls: [
+        // for each Google Fonts add url + options you want
+        // here add font-display option
+        'https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap',
+        'https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap'
+      ]
+    }
+  }
 }

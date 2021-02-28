@@ -1,11 +1,20 @@
-# My Portfolio
+# portfolio
 
-## Why and how?
+## Build Setup
 
-When I'm learning new technologies, I really like to practice to be sure I did understand well what I'm learning.
-So I challenged my friends to learn a new Front-End techno too and to make their own portfolio! We have approximately one month starting from the 15/16/2020 to make our little website and push it on a PaaS to host it.
+```bash
+# install dependencies
+$ npm install
 
-# Technologies behind
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-I'm learning VueJS since a few months and now I want to go deeper in my learning.
-I chose to go with NuxtJS!
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
